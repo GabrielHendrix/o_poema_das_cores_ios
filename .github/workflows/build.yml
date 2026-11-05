@@ -43,12 +43,20 @@ jobs:
 
       - name: Export IPA
         run: |
-          cat << EOF > ExportOptions.plist
-          {
-            "method": "app-store",
-            "uploadBitcode": false,
-            "uploadSymbols": true
-          }
+          # Cria o arquivo ExportOptions.plist com formato XML válido e garantido
+          cat << 'EOF' > ExportOptions.plist
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+              <key>method</key>
+              <string>app-store</string>
+              <key>uploadBitcode</key>
+              <false/>
+              <key>uploadSymbols</key>
+              <true/>
+          </dict>
+          </plist>
           EOF
           
           xcodebuild -exportArchive \
