@@ -59,15 +59,6 @@ jobs:
           # Instala o perfil na pasta padrão da Apple
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp "$PP_PATH" ~/Library/MobileDevice/Provisioning\ Profiles/
-      
-      - name: Increment Bundle Version
-        run: |
-          # Define o CFBundleVersion com o ID único de execução da pipeline
-          BUILD_NUM="${{ github.run_number }}"
-          echo "Definindo CFBundleVersion para $BUILD_NUM"
-          
-          # Atualiza o Info.plist principal
-          plutil -replace CFBundleVersion -string "$BUILD_NUM" Info.plist
           
       - name: Archive Project
         run: |
