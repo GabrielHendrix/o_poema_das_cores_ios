@@ -50,7 +50,7 @@ jobs:
           <plist version="1.0">
           <dict>
               <key>method</key>
-              <string>development</string>
+              <string>debugging</string>
               <key>teamID</key>
               <string>D9U5HX986Q</string>
               <key>signingStyle</key>
@@ -65,8 +65,7 @@ jobs:
           xcodebuild -exportArchive \
             -archivePath build/Unity-iPhone.xcarchive \
             -exportPath build/ipa \
-            -exportOptionsPlist ExportOptions.plist \
-            -allowProvisioningUpdates
+            -exportOptionsPlist ExportOptions.plist
 
       - name: Upload to App Store Connect / TestFlight
         uses: apple-actions/upload-testflight-build@v1
