@@ -23,7 +23,7 @@ jobs:
       - name: Build Project
         run: |
           if [ -d "*.xcworkspace" ]; then
-            xcodebuild -workspace *.xcworkspace -scheme o_poema_das_cores_ios -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+            xcodebuild -workspace *.xcworkspace -scheme Unity-iPhone -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
           else
-            xcodebuild -project *.xcodeproj -scheme o_poema_das_cores_ios -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+            xcodebuild -project Unity-iPhone.xcodeproj -scheme Unity-iPhone -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
           fi
