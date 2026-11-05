@@ -7,7 +7,7 @@ on:
 jobs:
   build-and-deploy:
     name: Build and Upload to TestFlight
-    runs-on: macos-latest
+    runs-on: macos-14
 
     steps:
       - name: Checkout Repository
@@ -20,16 +20,33 @@ jobs:
 
       - name: Remove unsupported flags
         run: |
-          # Remove a flag -mno-thumb incompatível com o Clang recente nos arquivos de projeto
           find . -name "*.pbxproj" -exec sed -i '' 's/-mno-thumb//g' {} +
 
-      - name: Build Project
+      # Instala o Certificado P12 e o Provisioning Profile no ambiente do CI
+      - name: Install Apple Certificate and Profile
+        env:
+          BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
+          P12_PASSWORD: ${{ secrets.P12_PASSWORD }}
+          BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.BUILD_PROVISION_PROFILE_BASE64 }}
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
         run: |
-          if [ -d "*.xcworkspace" ]; then
-            xcodebuild -workspace *.xcworkspace -scheme Unity-iPhone -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
-          else
-            xcodebuild -project Unity-iPhone.xcodeproj -scheme Unity-iPhone -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
-          fi
+          CERTIFICATE_PATH=$RUNNER_TEMP/build_certificate.p12
+          PP_PATH=$RUNNER_TEMP/build_profile.mobileprovision
+          KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
+
+          echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode -o $CERTIFICATE_PATH
+          echo -n "$BUILD_PROVISION_PROFILE_BASE64" | base64 --decode -o $PP_PATH
+
+          security create-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+          security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+
+          security import $CERTIFICATE_PATH -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
+          security list-keychain -d user -s $KEYCHAIN_PATH
+          security set-key-partition-list -S apple-tool:,apple: -s -k "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
+          cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles/
 
       - name: Archive Project
         run: |
@@ -39,29 +56,39 @@ jobs:
             -sdk iphoneos \
             -configuration Release \
             -archivePath build/Unity-iPhone.xcarchive \
-            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="Apple Distribution" \
+            DEVELOPMENT_TEAM=D9U5HX986Q \
+            PROVISIONING_PROFILE_SPECIFIER="iOS Team Store Provisioning Profile: com.GabrielHendrix.OPoemadasCores"
 
       - name: Export IPA
         run: |
-          # 1. Cria o ficheiro ExportOptions.plist na raiz da pasta atual
           cat << 'EOF' > ExportOptions.plist
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
           <plist version="1.0">
           <dict>
               <key>method</key>
-              <string>debugging</string>
+              <string>app-store-connect</string>
               <key>teamID</key>
               <string>D9U5HX986Q</string>
               <key>signingStyle</key>
-              <string>automatic</string>
-              <key>compileBitcode</key>
+              <string>manual</string>
+              <key>signingCertificate</key>
+              <string>Apple Distribution</string>
+              <key>provisioningProfiles</key>
+              <dict>
+                  <key>com.GabrielHendrix.OPoemadasCores</key>
+                  <string>iOS Team Store Provisioning Profile: com.GabrielHendrix.OPoemadasCores</string>
+              </dict>
+              <key>uploadBitcode</key>
               <false/>
+              <key>uploadSymbols</key>
+              <true/>
           </dict>
           </plist>
           EOF
-          
-          # 2. Executa a exportação do archive com suporte a atualização de perfis
+
           xcodebuild -exportArchive \
             -archivePath build/Unity-iPhone.xcarchive \
             -exportPath build/ipa \
