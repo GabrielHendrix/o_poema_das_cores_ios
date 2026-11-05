@@ -1,14 +1,12 @@
-name: iOS Build
+name: iOS Build & Deploy
 
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
-  build:
-    name: Build iOS App
+  build-and-deploy:
+    name: Build and Upload to TestFlight
     runs-on: macos-latest
 
     steps:
@@ -20,6 +18,11 @@ jobs:
       - name: Select Xcode Version
         run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 
+      - name: Remove unsupported flags
+        run: |
+          # Remove a flag -mno-thumb incompatível com o Clang recente nos arquivos de projeto
+          find . -name "*.pbxproj" -exec sed -i '' 's/-mno-thumb//g' {} +
+
       - name: Build Project
         run: |
           if [ -d "*.xcworkspace" ]; then
@@ -27,3 +30,36 @@ jobs:
           else
             xcodebuild -project Unity-iPhone.xcodeproj -scheme Unity-iPhone -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
           fi
+
+      - name: Archive Project
+        run: |
+          xcodebuild archive \
+            -project Unity-iPhone.xcodeproj \
+            -scheme Unity-iPhone \
+            -sdk iphoneos \
+            -configuration Release \
+            -archivePath build/Unity-iPhone.xcarchive \
+            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+
+      - name: Export IPA
+        run: |
+          cat << EOF > ExportOptions.plist
+          {
+            "method": "app-store",
+            "uploadBitcode": false,
+            "uploadSymbols": true
+          }
+          EOF
+          
+          xcodebuild -exportArchive \
+            -archivePath build/Unity-iPhone.xcarchive \
+            -exportPath build/ipa \
+            -exportOptionsPlist ExportOptions.plist
+
+      - name: Upload to App Store Connect / TestFlight
+        uses: apple-actions/upload-testflight-build@v1
+        with:
+          app-path: 'build/ipa/Unity-iPhone.ipa'
+          issuer-id: ${{ secrets.ASC_ISSUER_ID }}
+          api-key-id: ${{ secrets.ASC_API_KEY_ID }}
+          api-private-key: ${{ secrets.ASC_API_PRIVATE_KEY }}
