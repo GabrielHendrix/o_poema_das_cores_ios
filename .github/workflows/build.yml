@@ -1,0 +1,31 @@
+YAML
+name: iOS Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Build iOS App
+    runs-on: macos-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true # Garante que os arquivos grandes do Git LFS sejam baixados
+
+      - name: Select Xcode Version
+        run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+      - name: Build Project
+        run: |
+          # Se o seu projeto usa workspace gerado por CocoaPods:
+          if [ -d "*.xcworkspace" ]; then
+            xcodebuild -workspace *.xcworkspace -scheme o_poema_das_cores_ios -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+          else
+            xcodebuild -project *.xcodeproj -scheme o_poema_das_cores_ios -sdk iphoneos -configuration Release clean build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+          fi
