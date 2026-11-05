@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="1930" size="0.400000 0.945098" />
+    <ImageTarget name="2026" size="0.400000 0.594937" />
+    <ImageTarget name="2020" size="0.400000 0.666667" />
+    <ImageTarget name="2015" size="0.400000 0.720398" />
+    <ImageTarget name="2008" size="0.400000 0.726087" />
+    <ImageTarget name="2002" size="0.400000 0.689796" />
+    <ImageTarget name="1990" size="0.400000 0.865854" />
+    <ImageTarget name="1982" size="0.400000 0.939130" />
+    <ImageTarget name="1985" size="0.400000 0.895775" />
+    <ImageTarget name="1980" size="0.400000 0.674286" />
+    <ImageTarget name="1940" size="0.400000 0.689202" />
+    <ImageTarget name="1926" size="0.400000 0.470707" />
+    <ImageTarget name="1970" size="0.400000 0.962567" />
+    <ImageTarget name="time" size="7.000000 1.323116" />
+    <ImageTarget name="qrochomar" size="2.500000 2.581262" />
+    <ImageTarget name="bau" size="2.500000 2.482316" />
+    <ImageTarget name="ladyOcean" size="2.500000 2.641510" />
+    <ImageTarget name="fliper" size="2.500000 2.621039" />
+    <ImageTarget name="joias" size="15.000000 19.805687" />
+    <ImageTarget name="MARIAS" size="15.000000 18.327068" />
+    <ImageTarget name="mikaela" size="0.100000 0.095388" />
+    <ImageTarget name="sereia" size="0.100000 0.161324" />
+    <ImageTarget name="dog" size="0.100000 0.093985" />
+    <ImageTarget name="submarino" size="0.100000 0.079722" />
+    <ImageTarget name="arco" size="0.100000 0.067905" />
+    <ImageTarget name="caslos" size="0.100000 0.105485" />
+    <ImageTarget name="enzo" size="0.100000 0.087175" />
+    <ImageTarget name="flor" size="0.100000 0.100465" />
+    <ImageTarget name="Ryan" size="0.100000 0.100000" />
+    <ImageTarget name="kaique" size="0.100000 0.112526" />
+    <ImageTarget name="Yasmin" size="0.100000 0.083954" />
+    <ImageTarget name="primeiraEtapa" size="15.000000 22.472569" />
+    <ImageTarget name="FrenteOficina01" size="0.100000 0.016345" />
+    <ImageTarget name="CadernoOficina01Costas" size="0.100000 0.141834" />
+    <ImageTarget name="target-lazy" size="1.000000 1.012195" />
+    <ImageTarget name="target-pc9" size="1.000000 1.520256" />
+    <ImageTarget name="caramuru" size="3.000000 1.687500" />
+    <ImageTarget name="BeStillTarget" size="0.100000 0.095786" />
+    <ImageTarget name="casaCidadao" size="3.000000 1.090244" />
+    <ImageTarget name="centroCarnaval2002Target" size="3.000000 3.000000" />
+    <ImageTarget name="cartazLancamento" size="0.300000 0.405877" />
+    <ImageTarget name="janelaPaintTarget" size="0.090000 0.081921" />
+    <ImageTarget name="RickTarget" size="0.070000 0.077968" />
+    <ImageTarget name="loloTarget" size="0.100000 0.171975" />
+    <ImageTarget name="DowntownWaves" size="0.100000 0.135173" />
+    <ImageTarget name="CartazSalaPosCirurgica" size="0.300000 0.405877" />
+    <ImageTarget name="janelaPaint" size="0.100000 0.091023" />
+    <ImageTarget name="qrOcho2" size="0.070000 0.069675" />
+    <ImageTarget name="chooseYourColorTarget" size="0.080000 0.072818" />
+    <ImageTarget name="ricadoEletro" size="2.500000 1.767389" />
+    <ImageTarget name="ruaDaBosta" size="3.000000 1.743750" />
+    <ImageTarget name="targetEstacao" size="2.000000 1.550562" />
+    <ImageTarget name="RABBIT" size="0.070000 0.070028" />
+    <ImageTarget name="QRochoPretoBranco" size="0.500000 0.500000" />
+    <ImageTarget name="qrocho" size="0.080000 0.080685" />
+    <ImageTarget name="tramaSticker" size="0.100000 0.044496" />
+    <ImageTarget name="LZY" size="0.100000 0.112719" />
+    <ImageTarget name="pcSticker" size="0.100000 0.100000" />
+    <ImageTarget name="IMG_1731" size="2.000000 1.762180" />
+  </Tracking>
+</QCARConfig>

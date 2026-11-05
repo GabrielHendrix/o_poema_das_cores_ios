@@ -1,0 +1,5 @@
+Libraries/libiPhone-lib.a filter=lfs diff=lfs merge=lfs -text
+Frameworks/com.ptc.vuforia.engine/Vuforia/Plugins/iOS/Vuforia.framework/Vuforia filter=lfs diff=lfs merge=lfs -text
+Frameworks/OpenCVForUnity/Plugins/iOS/opencv2.framework/opencv2 filter=lfs diff=lfs merge=lfs -text
+Data/sharedassets2.assets.resS filter=lfs diff=lfs merge=lfs -text
+Data/sharedassets3.assets.resS filter=lfs diff=lfs merge=lfs -text

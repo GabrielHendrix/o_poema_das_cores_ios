@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="target17" size="0.030000 0.029679" />
+    <ImageTarget name="target20" size="0.030000 0.028190" />
+    <ImageTarget name="target19" size="0.030000 0.025068" />
+    <ImageTarget name="target18" size="0.030000 0.046918" />
+    <ImageTarget name="target15" size="0.030000 0.030000" />
+    <ImageTarget name="target14" size="0.030000 0.020876" />
+    <ImageTarget name="target13" size="0.030000 0.029118" />
+    <ImageTarget name="target12" size="0.030000 0.046918" />
+    <ImageTarget name="target11" size="0.030000 0.022776" />
+    <ImageTarget name="target10" size="0.030000 0.028171" />
+    <ImageTarget name="target9" size="0.030000 0.031184" />
+    <ImageTarget name="target8" size="0.030000 0.016762" />
+    <ImageTarget name="target7" size="0.030000 0.031014" />
+    <ImageTarget name="target6" size="0.030000 0.046918" />
+    <ImageTarget name="target5" size="0.030000 0.033891" />
+    <ImageTarget name="target4" size="0.030000 0.026159" />
+    <ImageTarget name="target3" size="0.030000 0.033572" />
+    <ImageTarget name="target1" size="0.030000 0.027323" />
+    <ImageTarget name="target16" size="0.030000 0.025015" />
+    <ImageTarget name="target2" size="0.030000 0.024497" />
+    <ImageTarget name="poema20" size="1.000000 1.000000" />
+    <ImageTarget name="poema19" size="1.000000 1.000000" />
+    <ImageTarget name="poema18" size="1.000000 1.000000" />
+    <ImageTarget name="poema17" size="1.000000 1.000000" />
+    <ImageTarget name="poema15" size="1.000000 1.000000" />
+    <ImageTarget name="poema14" size="1.000000 1.000000" />
+    <ImageTarget name="poema13" size="1.000000 1.000000" />
+    <ImageTarget name="poema12" size="1.000000 1.000000" />
+    <ImageTarget name="poema11" size="1.000000 1.000000" />
+    <ImageTarget name="poema9" size="1.000000 1.000000" />
+    <ImageTarget name="poema10" size="1.000000 1.000000" />
+    <ImageTarget name="poema8" size="1.000000 1.000000" />
+    <ImageTarget name="poema7" size="1.000000 1.000000" />
+    <ImageTarget name="poema6" size="1.000000 1.000000" />
+    <ImageTarget name="poema5" size="1.000000 1.000000" />
+    <ImageTarget name="poema4" size="1.000000 1.000000" />
+    <ImageTarget name="poema3" size="1.000000 1.000000" />
+    <ImageTarget name="poema2" size="1.000000 1.000000" />
+    <ImageTarget name="poema1" size="1.000000 1.000000" />
+    <ImageTarget name="poema16" size="1.000000 1.000000" />
+  </Tracking>
+</QCARConfig>
