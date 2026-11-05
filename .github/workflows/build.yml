@@ -60,11 +60,8 @@ jobs:
             -sdk iphoneos \
             -configuration Release \
             -archivePath build/Unity-iPhone.xcarchive \
-            CODE_SIGN_STYLE=Manual \
-            CODE_SIGN_IDENTITY="Apple Distribution" \
-            DEVELOPMENT_TEAM=D9U5HX986Q \
-            PROVISIONING_PROFILE_SPECIFIER="iOS Team Store Provisioning Profile: com.GabrielHendrix.OPoemadasCores"
-
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO
       - name: Export IPA
         run: |
           cat << 'EOF' > ExportOptions.plist
