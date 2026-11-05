@@ -70,9 +70,9 @@ jobs:
           <plist version="1.0">
           <dict>
               <key>method</key>
-              <string>app-store-connect</string>
+              <string>app-store</string>
               <key>teamID</key>
-              <string>D9U5HX986Q</string>
+              <string>VJGR937R6K</string>
               <key>signingStyle</key>
               <string>manual</string>
               <key>signingCertificate</key>
@@ -80,7 +80,7 @@ jobs:
               <key>provisioningProfiles</key>
               <dict>
                   <key>com.GabrielHendrix.OPoemadasCores</key>
-                  <string>iOS Team Store Provisioning Profile: com.GabrielHendrix.OPoemadasCores</string>
+                  <string>2ce00af2-0bb8-4e01-9da3-f60c9d7edfac</string>
               </dict>
               <key>uploadBitcode</key>
               <false/>
