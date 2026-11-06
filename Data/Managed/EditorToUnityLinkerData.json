@@ -44,20 +44,6 @@
             ]
         },
         {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Behaviour",
-            "fullManagedTypeName": "UnityEngine.Behaviour",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/Intro.unity",
-                "Assets/Scenes/Menu_Principal.unity",
-                "Assets/Scenes/StaticCam.unity",
-                "Assets/Scenes/LivroDigital.unity",
-                "Assets/Scenes/MusicPlayer.unity",
-                "Assets/Scenes/MultiObjectTrackingBasedOnColorExample.unity"
-            ]
-        },
-        {
             "managedAssemblyName": "",
             "nativeClass": "BuildSettings",
             "fullManagedTypeName": "",
@@ -73,36 +59,8 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "MonoBehaviour",
-            "fullManagedTypeName": "UnityEngine.MonoBehaviour",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/Intro.unity",
-                "Assets/Scenes/Menu_Principal.unity",
-                "Assets/Scenes/StaticCam.unity",
-                "Assets/Scenes/LivroDigital.unity",
-                "Assets/Scenes/MusicPlayer.unity",
-                "Assets/Scenes/MultiObjectTrackingBasedOnColorExample.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Shader",
             "fullManagedTypeName": "UnityEngine.Shader",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/Intro.unity",
-                "Assets/Scenes/Menu_Principal.unity",
-                "Assets/Scenes/StaticCam.unity",
-                "Assets/Scenes/LivroDigital.unity",
-                "Assets/Scenes/MusicPlayer.unity",
-                "Assets/Scenes/MultiObjectTrackingBasedOnColorExample.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Component",
-            "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Intro.unity",
@@ -472,6 +430,34 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Behaviour",
+            "fullManagedTypeName": "UnityEngine.Behaviour",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/Intro.unity",
+                "Assets/Scenes/Menu_Principal.unity",
+                "Assets/Scenes/StaticCam.unity",
+                "Assets/Scenes/LivroDigital.unity",
+                "Assets/Scenes/MusicPlayer.unity",
+                "Assets/Scenes/MultiObjectTrackingBasedOnColorExample.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "MonoBehaviour",
+            "fullManagedTypeName": "UnityEngine.MonoBehaviour",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/Intro.unity",
+                "Assets/Scenes/Menu_Principal.unity",
+                "Assets/Scenes/StaticCam.unity",
+                "Assets/Scenes/LivroDigital.unity",
+                "Assets/Scenes/MusicPlayer.unity",
+                "Assets/Scenes/MultiObjectTrackingBasedOnColorExample.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "GameObject",
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
@@ -488,6 +474,20 @@
             "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "Camera",
             "fullManagedTypeName": "UnityEngine.Camera",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/Intro.unity",
+                "Assets/Scenes/Menu_Principal.unity",
+                "Assets/Scenes/StaticCam.unity",
+                "Assets/Scenes/LivroDigital.unity",
+                "Assets/Scenes/MusicPlayer.unity",
+                "Assets/Scenes/MultiObjectTrackingBasedOnColorExample.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Component",
+            "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/Intro.unity",
@@ -859,20 +859,6 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Unity.XR.Management.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.XR.Management.XRGeneralSettings",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.XR.Management.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.XR.Management.XRManagerSettings",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.EventSystems.EventSystem",
@@ -981,6 +967,13 @@
             "managedAssemblyName": "VuforiaScripts.dll",
             "nativeClass": "",
             "fullManagedTypeName": "DefaultTrackableEventHandler",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "com.unity.multiplayer-hlapi.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Networking.NetworkCallbacks",
             "moduleName": "",
             "usedInScenes": []
         }

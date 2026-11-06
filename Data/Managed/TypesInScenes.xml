@@ -2,11 +2,8 @@
 	<assembly fullname="UnityEngine">
 		<type fullname="UnityEngine.Object" preserve="nothing"/>
 		<type fullname="UnityEditor.VFXManager" preserve="nothing"/>
-		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
 		<type fullname="UnityEditor.PlayerSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Shader" preserve="nothing"/>
-		<type fullname="UnityEngine.Component" preserve="nothing"/>
 		<type fullname="UnityEngine.TextAsset" preserve="nothing"/>
 		<type fullname="UnityEditor.MonoScript" preserve="nothing"/>
 		<type fullname="UnityEditor.AudioManager" preserve="nothing"/>
@@ -32,8 +29,11 @@
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture2D" preserve="nothing"/>
 		<type fullname="UnityEngine.Renderer" preserve="nothing"/>
+		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
+		<type fullname="UnityEngine.Component" preserve="nothing"/>
 		<type fullname="UnityEngine.Transform" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
@@ -75,10 +75,6 @@
 		<type fullname="OpenCVForUnityExample.FpsMonitor" preserve="nothing"/>
 		<type fullname="OpenCVForUnityExample.MultiObjectTrackingBasedOnColorExample" preserve="nothing"/>
 	</assembly>
-	<assembly fullname="Unity.XR.Management">
-		<type fullname="UnityEngine.XR.Management.XRGeneralSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.XR.Management.XRManagerSettings" preserve="nothing"/>
-	</assembly>
 	<assembly fullname="UnityEngine.UI">
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
 		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
@@ -100,5 +96,8 @@
 	<assembly fullname="VuforiaScripts">
 		<type fullname="DefaultInitializationErrorHandler" preserve="nothing"/>
 		<type fullname="DefaultTrackableEventHandler" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="com.unity.multiplayer-hlapi.Runtime">
+		<type fullname="UnityEngine.Networking.NetworkCallbacks" preserve="nothing"/>
 	</assembly>
 </linker>

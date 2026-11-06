@@ -70,35 +70,37 @@ extern void RuntimeOpenSourceInitializer_OnRuntimeMethodLoad_mE08391C6FC46E78E60
 extern void RuntimeOpenSourceInitializer_InitializeFacade_m083BFFA22FEA65C77B01B5D9941BC9E7B68D17D2 (void);
 // 0x00000019 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer::.ctor()
 extern void RuntimeOpenSourceInitializer__ctor_m488E798B9B5D5BE011A8E71825655A418D62B371 (void);
-// 0x0000001A Vuforia.UnityRuntimeCompiled.IUnityRenderPipeline Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_OpenSourceUnityRuntimeCompiledFacade::get_UnityRenderPipeline()
-extern void OpenSourceUnityRuntimeCompiledFacade_get_UnityRenderPipeline_m897AD15D21E5C34F8A71D17CB080E20E12B64549 (void);
-// 0x0000001B System.Boolean Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_OpenSourceUnityRuntimeCompiledFacade::IsUnityUICurrentlySelected()
-extern void OpenSourceUnityRuntimeCompiledFacade_IsUnityUICurrentlySelected_m53A682864DC4AEFA3CE9587636D4C0345B8229A9 (void);
-// 0x0000001C System.Boolean Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_OpenSourceUnityRuntimeCompiledFacade::IsHolographicDevice()
-extern void OpenSourceUnityRuntimeCompiledFacade_IsHolographicDevice_m55B3F38D46C771E1FE9B2663E0451C88B4E124E4 (void);
-// 0x0000001D System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_OpenSourceUnityRuntimeCompiledFacade::.ctor()
-extern void OpenSourceUnityRuntimeCompiledFacade__ctor_m4A55808613D2E3EF63C75B3643F12AF23CE115AC (void);
-// 0x0000001E System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::add_BeginFrameRendering(System.Action`1<UnityEngine.Camera[]>)
-extern void UnityRenderPipeline_add_BeginFrameRendering_m9D41146607F13FD13B4E95F10F02C52D992090C0 (void);
-// 0x0000001F System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::remove_BeginFrameRendering(System.Action`1<UnityEngine.Camera[]>)
-extern void UnityRenderPipeline_remove_BeginFrameRendering_m9EE84137E3B60A3C5F6F67D492E1DF4B319E267E (void);
-// 0x00000020 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::add_BeginCameraRendering(System.Action`1<UnityEngine.Camera>)
-extern void UnityRenderPipeline_add_BeginCameraRendering_m9791F732ACA9C59CB31D1D3C70E154895579CDFD (void);
-// 0x00000021 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::remove_BeginCameraRendering(System.Action`1<UnityEngine.Camera>)
-extern void UnityRenderPipeline_remove_BeginCameraRendering_m7F5A6A4D49445026620B996DF97994CABE443A50 (void);
-// 0x00000022 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::.ctor()
-extern void UnityRenderPipeline__ctor_mC0DC0A838D359359B81315037D4F5C3DF0300349 (void);
-// 0x00000023 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::OnBeginCameraRendering(UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera)
-extern void UnityRenderPipeline_OnBeginCameraRendering_m87B76CC95E538C583E21D4D6BC720FC0EBDC445F (void);
-// 0x00000024 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::OnBeginFrameRendering(UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera[])
-extern void UnityRenderPipeline_OnBeginFrameRendering_m6C5660780B920DCAB00731E8C9BDBC8D7C71164B (void);
-// 0x00000025 System.Void Vuforia.UnityRuntimeCompiled.ARFoundationIntegration.ARFoundationInitializer::OnBeforeSceneLoad()
+// 0x0000001A System.Void Vuforia.UnityRuntimeCompiled.ARFoundationIntegration.ARFoundationInitializer::OnBeforeSceneLoad()
 extern void ARFoundationInitializer_OnBeforeSceneLoad_m2766A8EDDC5A845DA0BF4AA9076846ED029C806B (void);
-// 0x00000026 System.Void Vuforia.UnityRuntimeCompiled.ARFoundationIntegration.ARFoundationInitializer::InitializeFacade()
+// 0x0000001B System.Void Vuforia.UnityRuntimeCompiled.ARFoundationIntegration.ARFoundationInitializer::InitializeFacade()
 extern void ARFoundationInitializer_InitializeFacade_m1B9C3D4F1626C39CD7556A52F634F9DDA6CB26A4 (void);
-// 0x00000027 System.Void Vuforia.UnityRuntimeCompiled.ARFoundationIntegration.OpenSourceUnityARFoundationFacade::.ctor()
+// 0x0000001C System.Void Vuforia.UnityRuntimeCompiled.ARFoundationIntegration.OpenSourceUnityARFoundationFacade::.ctor()
 extern void OpenSourceUnityARFoundationFacade__ctor_m2D3671D73DBFEF8EC55C34CFF767D159F2736F7D (void);
-static Il2CppMethodPointer s_methodPointers[39] = 
+// 0x0000001D Vuforia.UnityRuntimeCompiled.IUnityRenderPipeline Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_OpenSourceUnityRuntimeCompiledFacade::get_UnityRenderPipeline()
+extern void OpenSourceUnityRuntimeCompiledFacade_get_UnityRenderPipeline_m897AD15D21E5C34F8A71D17CB080E20E12B64549 (void);
+// 0x0000001E System.IntPtr Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_OpenSourceUnityRuntimeCompiledFacade::GetHoloLensSpatialCoordinateSystemPtr()
+extern void OpenSourceUnityRuntimeCompiledFacade_GetHoloLensSpatialCoordinateSystemPtr_mB888603E661395FFAF9013D2316EA70D75AD6FF5 (void);
+// 0x0000001F System.Boolean Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_OpenSourceUnityRuntimeCompiledFacade::IsUnityUICurrentlySelected()
+extern void OpenSourceUnityRuntimeCompiledFacade_IsUnityUICurrentlySelected_m53A682864DC4AEFA3CE9587636D4C0345B8229A9 (void);
+// 0x00000020 System.Boolean Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_OpenSourceUnityRuntimeCompiledFacade::IsHolographicDevice()
+extern void OpenSourceUnityRuntimeCompiledFacade_IsHolographicDevice_m55B3F38D46C771E1FE9B2663E0451C88B4E124E4 (void);
+// 0x00000021 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_OpenSourceUnityRuntimeCompiledFacade::.ctor()
+extern void OpenSourceUnityRuntimeCompiledFacade__ctor_m4A55808613D2E3EF63C75B3643F12AF23CE115AC (void);
+// 0x00000022 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::add_BeginFrameRendering(System.Action`1<UnityEngine.Camera[]>)
+extern void UnityRenderPipeline_add_BeginFrameRendering_m9D41146607F13FD13B4E95F10F02C52D992090C0 (void);
+// 0x00000023 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::remove_BeginFrameRendering(System.Action`1<UnityEngine.Camera[]>)
+extern void UnityRenderPipeline_remove_BeginFrameRendering_m9EE84137E3B60A3C5F6F67D492E1DF4B319E267E (void);
+// 0x00000024 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::add_BeginCameraRendering(System.Action`1<UnityEngine.Camera>)
+extern void UnityRenderPipeline_add_BeginCameraRendering_m9791F732ACA9C59CB31D1D3C70E154895579CDFD (void);
+// 0x00000025 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::remove_BeginCameraRendering(System.Action`1<UnityEngine.Camera>)
+extern void UnityRenderPipeline_remove_BeginCameraRendering_m7F5A6A4D49445026620B996DF97994CABE443A50 (void);
+// 0x00000026 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::.ctor()
+extern void UnityRenderPipeline__ctor_mC0DC0A838D359359B81315037D4F5C3DF0300349 (void);
+// 0x00000027 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::OnBeginCameraRendering(UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera)
+extern void UnityRenderPipeline_OnBeginCameraRendering_m87B76CC95E538C583E21D4D6BC720FC0EBDC445F (void);
+// 0x00000028 System.Void Vuforia.UnityRuntimeCompiled.RuntimeOpenSourceInitializer_UnityRenderPipeline::OnBeginFrameRendering(UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Camera[])
+extern void UnityRenderPipeline_OnBeginFrameRendering_m6C5660780B920DCAB00731E8C9BDBC8D7C71164B (void);
+static Il2CppMethodPointer s_methodPointers[40] = 
 {
 	BoundingBoxRenderer_OnRenderObject_mDE8704583C66930554EFF367F283E18E4083B46C,
 	BoundingBoxRenderer__ctor_m54B609CFA7E249CDA58761AF3BC6C79337EF0FEB,
@@ -125,7 +127,11 @@ static Il2CppMethodPointer s_methodPointers[39] =
 	RuntimeOpenSourceInitializer_OnRuntimeMethodLoad_mE08391C6FC46E78E60FD1306F9D26F707D8F01E3,
 	RuntimeOpenSourceInitializer_InitializeFacade_m083BFFA22FEA65C77B01B5D9941BC9E7B68D17D2,
 	RuntimeOpenSourceInitializer__ctor_m488E798B9B5D5BE011A8E71825655A418D62B371,
+	ARFoundationInitializer_OnBeforeSceneLoad_m2766A8EDDC5A845DA0BF4AA9076846ED029C806B,
+	ARFoundationInitializer_InitializeFacade_m1B9C3D4F1626C39CD7556A52F634F9DDA6CB26A4,
+	OpenSourceUnityARFoundationFacade__ctor_m2D3671D73DBFEF8EC55C34CFF767D159F2736F7D,
 	OpenSourceUnityRuntimeCompiledFacade_get_UnityRenderPipeline_m897AD15D21E5C34F8A71D17CB080E20E12B64549,
+	OpenSourceUnityRuntimeCompiledFacade_GetHoloLensSpatialCoordinateSystemPtr_mB888603E661395FFAF9013D2316EA70D75AD6FF5,
 	OpenSourceUnityRuntimeCompiledFacade_IsUnityUICurrentlySelected_m53A682864DC4AEFA3CE9587636D4C0345B8229A9,
 	OpenSourceUnityRuntimeCompiledFacade_IsHolographicDevice_m55B3F38D46C771E1FE9B2663E0451C88B4E124E4,
 	OpenSourceUnityRuntimeCompiledFacade__ctor_m4A55808613D2E3EF63C75B3643F12AF23CE115AC,
@@ -136,57 +142,55 @@ static Il2CppMethodPointer s_methodPointers[39] =
 	UnityRenderPipeline__ctor_mC0DC0A838D359359B81315037D4F5C3DF0300349,
 	UnityRenderPipeline_OnBeginCameraRendering_m87B76CC95E538C583E21D4D6BC720FC0EBDC445F,
 	UnityRenderPipeline_OnBeginFrameRendering_m6C5660780B920DCAB00731E8C9BDBC8D7C71164B,
-	ARFoundationInitializer_OnBeforeSceneLoad_m2766A8EDDC5A845DA0BF4AA9076846ED029C806B,
-	ARFoundationInitializer_InitializeFacade_m1B9C3D4F1626C39CD7556A52F634F9DDA6CB26A4,
-	OpenSourceUnityARFoundationFacade__ctor_m2D3671D73DBFEF8EC55C34CFF767D159F2736F7D,
 };
-static const int32_t s_InvokerIndices[39] = 
+static const int32_t s_InvokerIndices[40] = 
 {
-	19,
-	19,
-	29,
-	19,
-	19,
-	19,
-	19,
-	29,
-	29,
-	28,
-	11,
-	19,
-	1839,
-	19,
-	19,
-	19,
-	2009,
-	19,
-	27,
-	19,
-	19,
-	19,
+	23,
+	23,
+	32,
+	23,
+	23,
+	23,
+	23,
+	32,
+	32,
+	31,
+	14,
+	23,
+	1973,
+	23,
+	23,
+	23,
+	2194,
+	23,
+	30,
+	23,
+	23,
+	23,
 	3,
 	3,
-	19,
-	11,
-	85,
-	85,
-	19,
-	22,
-	22,
-	22,
-	22,
-	19,
-	1536,
-	1536,
+	23,
 	3,
 	3,
-	19,
+	23,
+	14,
+	15,
+	89,
+	89,
+	23,
+	26,
+	26,
+	26,
+	26,
+	23,
+	1601,
+	1601,
 };
 extern const Il2CppCodeGenModule g_VuforiaScriptsCodeGenModule;
 const Il2CppCodeGenModule g_VuforiaScriptsCodeGenModule = 
 {
 	"VuforiaScripts.dll",
-	39,
+	40,
 	s_methodPointers,
 	s_InvokerIndices,
 	0,

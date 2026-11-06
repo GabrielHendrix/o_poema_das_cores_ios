@@ -2656,11 +2656,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_Add_m6930161974C7504C80F52EC379EF
 // System.Collections.Generic.List`1/Enumerator<!0> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD  List_1_GetEnumerator_m52CC760E475D226A2B75048D70C4E22692F9F68D_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, const RuntimeMethod* method);
 // !0 System.Collections.Generic.List`1/Enumerator<System.Object>::get_Current()
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current_m02BA9421E2C74AA249D5CBC9689B31A5C3E858F8_gshared_inline (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current_mD7829C7E8CFBEDD463B15A951CDE9B90A12CC55C_gshared_inline (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.List`1/Enumerator<System.Object>::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m38B1099DDAD7EEDE2F4CDAB11C095AC784AC2E34_gshared (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_m5503C7D96CB18337879D1E60B6D883C3B5C8C5B8_gshared (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_m94D0DAE031619503CDA6E53C5C3CC78AF3139472_gshared (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method);
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mC832F1AC0F814BAEB19175F5D7972A7507508BC3_gshared (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, const RuntimeMethod* method);
 
@@ -2785,7 +2785,7 @@ inline Enumerator_tE95BD503C0C64DE680BF98B121F3268A505A121F  List_1_GetEnumerato
 // !0 System.Collections.Generic.List`1/Enumerator<UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard>::get_Current()
 inline GcLeaderboard_t363887C9C2BFA6F02D08CC6F6BB93E8ABE9A42D2 * Enumerator_get_Current_m6F7537334CC45EA83F83D7DF27D293C588E10669_inline (Enumerator_tE95BD503C0C64DE680BF98B121F3268A505A121F * __this, const RuntimeMethod* method)
 {
-	return ((  GcLeaderboard_t363887C9C2BFA6F02D08CC6F6BB93E8ABE9A42D2 * (*) (Enumerator_tE95BD503C0C64DE680BF98B121F3268A505A121F *, const RuntimeMethod*))Enumerator_get_Current_m02BA9421E2C74AA249D5CBC9689B31A5C3E858F8_gshared_inline)(__this, method);
+	return ((  GcLeaderboard_t363887C9C2BFA6F02D08CC6F6BB93E8ABE9A42D2 * (*) (Enumerator_tE95BD503C0C64DE680BF98B121F3268A505A121F *, const RuntimeMethod*))Enumerator_get_Current_mD7829C7E8CFBEDD463B15A951CDE9B90A12CC55C_gshared_inline)(__this, method);
 }
 // System.Boolean UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Contains(UnityEngine.SocialPlatforms.Impl.Leaderboard)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GcLeaderboard_Contains_mD5E247A8CC20AEEBB749290A0EC9DB54C199491C (GcLeaderboard_t363887C9C2BFA6F02D08CC6F6BB93E8ABE9A42D2 * __this, Leaderboard_t01480B36811BC84DF398C8A847972B62F5E2E4FE * ___board0, const RuntimeMethod* method);
@@ -2799,7 +2799,7 @@ inline bool Enumerator_MoveNext_mC91D8A7A20933BE5F1461EB9A219276445F52BE4 (Enume
 // System.Void System.Collections.Generic.List`1/Enumerator<UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard>::Dispose()
 inline void Enumerator_Dispose_mF373A7BF9B207CD309949853B339F925BD22889F (Enumerator_tE95BD503C0C64DE680BF98B121F3268A505A121F * __this, const RuntimeMethod* method)
 {
-	((  void (*) (Enumerator_tE95BD503C0C64DE680BF98B121F3268A505A121F *, const RuntimeMethod*))Enumerator_Dispose_m5503C7D96CB18337879D1E60B6D883C3B5C8C5B8_gshared)(__this, method);
+	((  void (*) (Enumerator_tE95BD503C0C64DE680BF98B121F3268A505A121F *, const RuntimeMethod*))Enumerator_Dispose_m94D0DAE031619503CDA6E53C5C3CC78AF3139472_gshared)(__this, method);
 }
 // UnityEngine.SocialPlatforms.ILocalUser UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::get_localUser()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameCenterPlatform_get_localUser_m8F93A5D52B7DDA95087457B93FE5896A3D617574 (GameCenterPlatform_t699FF764080BA03011F7DBEA26659A3E4FB2ED43 * __this, const RuntimeMethod* method);
@@ -7439,7 +7439,7 @@ IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR String_t* Score_get_leaderboardID_mDF
 		return L_0;
 	}
 }
-IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current_m02BA9421E2C74AA249D5CBC9689B31A5C3E858F8_gshared_inline (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current_mD7829C7E8CFBEDD463B15A951CDE9B90A12CC55C_gshared_inline (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method)
 {
 	{
 		RuntimeObject * L_0 = (RuntimeObject *)__this->get_current_3();
