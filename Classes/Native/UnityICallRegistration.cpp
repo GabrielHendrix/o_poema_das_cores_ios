@@ -28,18 +28,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : Unity.Jobs.JobHandle
 
-	//Start Registrations for type : UnityEngine.Animation
-
-		//System.Int32 UnityEngine.Animation::GetStateCount()
-		void Register_UnityEngine_Animation_GetStateCount();
-		Register_UnityEngine_Animation_GetStateCount();
-
-		//UnityEngine.AnimationState UnityEngine.Animation::GetStateAtIndex(System.Int32)
-		void Register_UnityEngine_Animation_GetStateAtIndex();
-		Register_UnityEngine_Animation_GetStateAtIndex();
-
-	//End Registrations for type : UnityEngine.Animation
-
 	//Start Registrations for type : UnityEngine.AnimationCurve
 
 		//System.Boolean UnityEngine.AnimationCurve::Internal_Equals(System.IntPtr)
@@ -145,10 +133,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.String UnityEngine.Application::get_persistentDataPath()
 		void Register_UnityEngine_Application_get_persistentDataPath();
 		Register_UnityEngine_Application_get_persistentDataPath();
-
-		//System.String UnityEngine.Application::get_productName()
-		void Register_UnityEngine_Application_get_productName();
-		Register_UnityEngine_Application_get_productName();
 
 		//System.String UnityEngine.Application::get_streamingAssetsPath()
 		void Register_UnityEngine_Application_get_streamingAssetsPath();

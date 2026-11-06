@@ -16,19 +16,9 @@
 		<type fullname="UnityEngine.Rendering.GraphicsSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.QualitySettings" preserve="nothing"/>
 		<type fullname="UnityEditor.Physics2DSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.AnimationClip" preserve="nothing"/>
-		<type fullname="UnityEngine.Animation" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
-		<type fullname="UnityEngine.Canvas" preserve="nothing"/>
-		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
-		<type fullname="UnityEngine.Animator" preserve="nothing"/>
-		<type fullname="UnityEngine.RuntimeAnimatorController" preserve="nothing"/>
-		<type fullname="UnityEngine.Motion" preserve="nothing"/>
-		<type fullname="UnityEditor.Animations.AnimatorController" preserve="nothing"/>
 		<type fullname="UnityEngine.LightmapSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture2D" preserve="nothing"/>
-		<type fullname="UnityEngine.Renderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
@@ -37,66 +27,11 @@
 		<type fullname="UnityEngine.Transform" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
-		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture" preserve="nothing"/>
-		<type fullname="UnityEngine.SpriteRenderer" preserve="nothing"/>
-		<type fullname="UnityEngine.MeshRenderer" preserve="nothing"/>
-		<type fullname="UnityEngine.AudioClip" preserve="nothing"/>
-		<type fullname="UnityEngine.AudioSource" preserve="nothing"/>
-		<type fullname="UnityEngine.Mesh" preserve="nothing"/>
-		<type fullname="UnityEngine.MeshFilter" preserve="nothing"/>
-		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
-		<type fullname="UnityEngine.Collider" preserve="nothing"/>
-		<type fullname="UnityEngine.Font" preserve="nothing"/>
-		<type fullname="UnityEngine.FlareLayer" preserve="nothing"/>
-	</assembly>
-	<assembly fullname="Assembly-CSharp">
-		<type fullname="StaticCamManager" preserve="nothing"/>
-		<type fullname="book_load" preserve="nothing"/>
-		<type fullname="book_player" preserve="nothing"/>
-		<type fullname="cam_load" preserve="nothing"/>
-		<type fullname="menu_in_book" preserve="nothing"/>
-		<type fullname="menu_in_cam" preserve="nothing"/>
-		<type fullname="menu_in_music" preserve="nothing"/>
-		<type fullname="menu_load" preserve="nothing"/>
-		<type fullname="menu_out_book" preserve="nothing"/>
-		<type fullname="menu_out_cam" preserve="nothing"/>
-		<type fullname="menu_out_music" preserve="nothing"/>
-		<type fullname="music_load" preserve="nothing"/>
-		<type fullname="music_player" preserve="nothing"/>
-		<type fullname="open_cv_out_static_cam" preserve="nothing"/>
-		<type fullname="opencv_in" preserve="nothing"/>
-		<type fullname="opencv_out" preserve="nothing"/>
-		<type fullname="resize_screen" preserve="nothing"/>
-		<type fullname="splashIntro" preserve="nothing"/>
-	</assembly>
-	<assembly fullname="EnoxSoftware.OpenCVForUnity">
-		<type fullname="OpenCVForUnity.UnityUtils.Helper.WebCamTextureToMatHelper" preserve="nothing"/>
-		<type fullname="OpenCVForUnityExample.FpsMonitor" preserve="nothing"/>
-		<type fullname="OpenCVForUnityExample.MultiObjectTrackingBasedOnColorExample" preserve="nothing"/>
-	</assembly>
-	<assembly fullname="UnityEngine.UI">
-		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
-		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.LayoutElement" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.Slider" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Vuforia.UnityExtensions">
-		<type fullname="Vuforia.ImageTargetBehaviour" preserve="nothing"/>
-		<type fullname="Vuforia.TurnOffBehaviour" preserve="nothing"/>
-		<type fullname="Vuforia.VuforiaBehaviour" preserve="nothing"/>
 		<type fullname="Vuforia.VuforiaConfiguration" preserve="nothing"/>
-	</assembly>
-	<assembly fullname="VuforiaScripts">
-		<type fullname="DefaultInitializationErrorHandler" preserve="nothing"/>
-		<type fullname="DefaultTrackableEventHandler" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="com.unity.multiplayer-hlapi.Runtime">
 		<type fullname="UnityEngine.Networking.NetworkCallbacks" preserve="nothing"/>

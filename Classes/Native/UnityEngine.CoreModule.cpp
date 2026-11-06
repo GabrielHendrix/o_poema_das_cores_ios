@@ -9836,15 +9836,6 @@ public:
 };
 
 
-// UnityEngine.FlareLayer
-struct  FlareLayer_tA6C6DE6E61EDE5E8942F12C4EB57E219EDE00D98  : public Behaviour_tBDC7E9C3C898AD8348891B82D3E345801D920CA8
-{
-public:
-
-public:
-};
-
-
 // UnityEngine.Light
 struct  Light_tFDE490EADBC7E080F74CA804929513AF07C31A6C  : public Behaviour_tBDC7E9C3C898AD8348891B82D3E345801D920CA8
 {
@@ -12664,16 +12655,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_unityVersion_mC6690
 	static Application_get_unityVersion_mC66901DE17E8F4F5BCA46CF3A4DCB34AF245CF99_ftn _il2cpp_icall_func;
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Application_get_unityVersion_mC66901DE17E8F4F5BCA46CF3A4DCB34AF245CF99_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_unityVersion()");
-	String_t* retVal = _il2cpp_icall_func();
-	return retVal;
-}
-// System.String UnityEngine.Application::get_productName()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_productName_m9F65580744751D3771DA955C0D947787F3F5E9A5 (const RuntimeMethod* method)
-{
-	typedef String_t* (*Application_get_productName_m9F65580744751D3771DA955C0D947787F3F5E9A5_ftn) ();
-	static Application_get_productName_m9F65580744751D3771DA955C0D947787F3F5E9A5_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Application_get_productName_m9F65580744751D3771DA955C0D947787F3F5E9A5_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::get_productName()");
 	String_t* retVal = _il2cpp_icall_func();
 	return retVal;
 }
@@ -25652,14 +25633,6 @@ IL2CPP_EXTERN_C void FailedToLoadScriptObject_tB9D2DBB36BA1E86F2A7392AF112B45520
 IL2CPP_EXTERN_C void FailedToLoadScriptObject_tB9D2DBB36BA1E86F2A7392AF112B455206E8E83B_marshal_com_cleanup(FailedToLoadScriptObject_tB9D2DBB36BA1E86F2A7392AF112B455206E8E83B_marshaled_com& marshaled)
 {
 }
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif

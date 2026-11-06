@@ -39,6 +39,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <sys/sysctl.h>
+
 // MARK: - ARFoundation Vuforia Stubs
 extern "C" {
     void arfoundationDriverAddCameraFrameAndPose(void) {}
@@ -47,6 +48,7 @@ extern "C" {
     void arfoundationDriverSetCreateAnchorMethod(void* method) {}
     void arfoundationDriverSetRemoveAnchorMethod(void* method) {}
 }
+
 // we assume that app delegate is never changed and we can cache it, instead of re-query UIApplication every time
 UnityAppController* _UnityAppController = nil;
 UnityAppController* GetAppController()

@@ -6989,11 +6989,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0_U3CGetFilePath
 		NullCheck(L_9);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_10 = L_9->get_filePathInputField_12();
 		NullCheck(L_10);
-		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_10);
+		String_t* L_11 = VirtFuncInvoker0< String_t* >::Invoke(72 /* System.String UnityEngine.UI.Text::get_text() */, L_10);
 		String_t* L_12 = __this->get_filePath_1();
 		String_t* L_13 = String_Concat_mDD2E38332DED3A8C088D38D78A0E0BEB5091DA64(L_11, _stringLiteralBB280A86B91EB0E80A0BBD10BAD6EA7F273FFBEB, L_12, _stringLiteralF5AE136F110D8633A2265CD37AEC64AB569F537B, /*hidden argument*/NULL);
 		NullCheck(L_8);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_8, L_13);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_8, L_13);
 	}
 
 IL_0070:
@@ -7011,11 +7011,11 @@ IL_0070:
 		NullCheck(L_18);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_19 = L_18->get_filePathInputField_12();
 		NullCheck(L_19);
-		String_t* L_20 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_19);
+		String_t* L_20 = VirtFuncInvoker0< String_t* >::Invoke(72 /* System.String UnityEngine.UI.Text::get_text() */, L_19);
 		String_t* L_21 = V_0;
 		String_t* L_22 = String_Concat_mDD2E38332DED3A8C088D38D78A0E0BEB5091DA64(L_20, _stringLiteralBB280A86B91EB0E80A0BBD10BAD6EA7F273FFBEB, L_21, _stringLiteralADC83B19E793491B1C6EA0FD8B46CD9F32E592FC, /*hidden argument*/NULL);
 		NullCheck(L_17);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_17, L_22);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_17, L_22);
 		// },
 		return;
 	}
@@ -7065,7 +7065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0_U3CGetFilePath
 		NullCheck(L_14);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_15 = L_14->get_filePathInputField_12();
 		NullCheck(L_15);
-		String_t* L_16 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_15);
+		String_t* L_16 = VirtFuncInvoker0< String_t* >::Invoke(72 /* System.String UnityEngine.UI.Text::get_text() */, L_15);
 		NullCheck(L_13);
 		ArrayElementTypeCheck (L_13, L_16);
 		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_16);
@@ -7095,7 +7095,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0_U3CGetFilePath
 		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(5), (RuntimeObject *)_stringLiteralADC83B19E793491B1C6EA0FD8B46CD9F32E592FC);
 		String_t* L_26 = String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07(L_25, /*hidden argument*/NULL);
 		NullCheck(L_11);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_11, L_26);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_11, L_26);
 		// },
 		return;
 	}
@@ -7162,7 +7162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0_U3CGetFilePath
 		NullCheck(L_19);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_20 = L_19->get_filePathInputField_12();
 		NullCheck(L_20);
-		String_t* L_21 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_20);
+		String_t* L_21 = VirtFuncInvoker0< String_t* >::Invoke(72 /* System.String UnityEngine.UI.Text::get_text() */, L_20);
 		NullCheck(L_18);
 		ArrayElementTypeCheck (L_18, L_21);
 		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_21);
@@ -7201,7 +7201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass14_0_U3CGetFilePath
 		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(7), (RuntimeObject *)_stringLiteralADC83B19E793491B1C6EA0FD8B46CD9F32E592FC);
 		String_t* L_34 = String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07(L_33, /*hidden argument*/NULL);
 		NullCheck(L_16);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_16, L_34);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_16, L_34);
 		// },
 		return;
 	}
@@ -7256,10 +7256,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass15_0_U3CGetMultiple
 		NullCheck(L_5);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_6 = L_5->get_filePathInputField_12();
 		NullCheck(L_6);
-		String_t* L_7 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_6);
+		String_t* L_7 = VirtFuncInvoker0< String_t* >::Invoke(72 /* System.String UnityEngine.UI.Text::get_text() */, L_6);
 		String_t* L_8 = String_Concat_mB78D0094592718DA6D5DB6C712A9C225631666BE(L_7, _stringLiteral29EE98A16065C079278D3F763501B45E26AA488F, /*hidden argument*/NULL);
 		NullCheck(L_4);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, L_8);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_4, L_8);
 		// for (int i = 0; i < readableFilePaths.Count; i++)
 		V_1 = 0;
 		goto IL_0190;
@@ -7322,7 +7322,7 @@ IL_0054:
 		NullCheck(L_31);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_32 = L_31->get_filePathInputField_12();
 		NullCheck(L_32);
-		String_t* L_33 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_32);
+		String_t* L_33 = VirtFuncInvoker0< String_t* >::Invoke(72 /* System.String UnityEngine.UI.Text::get_text() */, L_32);
 		NullCheck(L_30);
 		ArrayElementTypeCheck (L_30, L_33);
 		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_33);
@@ -7356,7 +7356,7 @@ IL_0054:
 		(L_45)->SetAt(static_cast<il2cpp_array_size_t>(5), (RuntimeObject *)_stringLiteralF5AE136F110D8633A2265CD37AEC64AB569F537B);
 		String_t* L_46 = String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07(L_45, /*hidden argument*/NULL);
 		NullCheck(L_28);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_28, L_46);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_28, L_46);
 		// }
 		goto IL_018c;
 	}
@@ -7401,7 +7401,7 @@ IL_0100:
 		NullCheck(L_63);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_64 = L_63->get_filePathInputField_12();
 		NullCheck(L_64);
-		String_t* L_65 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_64);
+		String_t* L_65 = VirtFuncInvoker0< String_t* >::Invoke(72 /* System.String UnityEngine.UI.Text::get_text() */, L_64);
 		NullCheck(L_62);
 		ArrayElementTypeCheck (L_62, L_65);
 		(L_62)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_65);
@@ -7434,7 +7434,7 @@ IL_0100:
 		(L_76)->SetAt(static_cast<il2cpp_array_size_t>(5), (RuntimeObject *)_stringLiteralADC83B19E793491B1C6EA0FD8B46CD9F32E592FC);
 		String_t* L_77 = String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07(L_76, /*hidden argument*/NULL);
 		NullCheck(L_60);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_60, L_77);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_60, L_77);
 	}
 
 IL_018c:
@@ -7484,11 +7484,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass15_0_U3CGetMultiple
 		NullCheck(L_4);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_5 = L_4->get_filePathInputField_12();
 		NullCheck(L_5);
-		String_t* L_6 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_5);
+		String_t* L_6 = VirtFuncInvoker0< String_t* >::Invoke(72 /* System.String UnityEngine.UI.Text::get_text() */, L_5);
 		String_t* L_7 = ___path0;
 		String_t* L_8 = String_Concat_mDD2E38332DED3A8C088D38D78A0E0BEB5091DA64(L_6, _stringLiteral6D4579BE3FE523381269F7E978DE8AFF18323141, L_7, _stringLiteralADC83B19E793491B1C6EA0FD8B46CD9F32E592FC, /*hidden argument*/NULL);
 		NullCheck(L_3);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_8);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_3, L_8);
 		// },
 		return;
 	}
@@ -7538,7 +7538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass15_0_U3CGetMultiple
 		NullCheck(L_14);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_15 = L_14->get_filePathInputField_12();
 		NullCheck(L_15);
-		String_t* L_16 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_15);
+		String_t* L_16 = VirtFuncInvoker0< String_t* >::Invoke(72 /* System.String UnityEngine.UI.Text::get_text() */, L_15);
 		NullCheck(L_13);
 		ArrayElementTypeCheck (L_13, L_16);
 		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_16);
@@ -7568,7 +7568,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass15_0_U3CGetMultiple
 		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(5), (RuntimeObject *)_stringLiteralADC83B19E793491B1C6EA0FD8B46CD9F32E592FC);
 		String_t* L_26 = String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07(L_25, /*hidden argument*/NULL);
 		NullCheck(L_11);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_11, L_26);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_11, L_26);
 		// },
 		return;
 	}
@@ -7627,7 +7627,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass15_0_U3CGetMultiple
 		NullCheck(L_17);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_18 = L_17->get_filePathInputField_12();
 		NullCheck(L_18);
-		String_t* L_19 = VirtFuncInvoker0< String_t* >::Invoke(74 /* System.String UnityEngine.UI.Text::get_text() */, L_18);
+		String_t* L_19 = VirtFuncInvoker0< String_t* >::Invoke(72 /* System.String UnityEngine.UI.Text::get_text() */, L_18);
 		NullCheck(L_16);
 		ArrayElementTypeCheck (L_16, L_19);
 		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject *)L_19);
@@ -7666,7 +7666,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass15_0_U3CGetMultiple
 		(L_31)->SetAt(static_cast<il2cpp_array_size_t>(7), (RuntimeObject *)_stringLiteralADC83B19E793491B1C6EA0FD8B46CD9F32E592FC);
 		String_t* L_32 = String_Concat_mB7BA84F13912303B2E5E40FBF0109E1A328ACA07(L_31, /*hidden argument*/NULL);
 		NullCheck(L_14);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_14, L_32);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_14, L_32);
 		// },
 		return;
 	}
@@ -9643,7 +9643,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VideoWriterExample_OnPlayButtonClick_mB2
 		NullCheck(L_1);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_2 = Component_GetComponentInChildren_TisText_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030_m2DB8C5DF6CFA294CB1F7E52B1476B46299AE5362(L_1, /*hidden argument*/Component_GetComponentInChildren_TisText_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030_m2DB8C5DF6CFA294CB1F7E52B1476B46299AE5362_RuntimeMethod_var);
 		NullCheck(L_2);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, _stringLiteral5D12BD53552CAFC41CA6146C04870DF2E1574E13);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_2, _stringLiteral5D12BD53552CAFC41CA6146C04870DF2E1574E13);
 		// RecButton.interactable = true;
 		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_3 = __this->get_RecButton_6();
 		NullCheck(L_3);
@@ -9683,7 +9683,7 @@ IL_004f:
 		NullCheck(L_9);
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_10 = Component_GetComponentInChildren_TisText_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030_m2DB8C5DF6CFA294CB1F7E52B1476B46299AE5362(L_9, /*hidden argument*/Component_GetComponentInChildren_TisText_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030_m2DB8C5DF6CFA294CB1F7E52B1476B46299AE5362_RuntimeMethod_var);
 		NullCheck(L_10);
-		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_10, _stringLiteral9E253470C876EE6D5C720EB777AEB82D4C26E28F);
+		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_10, _stringLiteral9E253470C876EE6D5C720EB777AEB82D4C26E28F);
 		// RecButton.interactable = false;
 		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_11 = __this->get_RecButton_6();
 		NullCheck(L_11);
