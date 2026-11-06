@@ -6533,9 +6533,9 @@ IL_0010:
 IL_0030:
 	{
 		__this->set_U3CU3E1__state_0((-1));
-		// SceneManager.LoadScene(2);
+		// SceneManager.LoadScene(1);
 		IL2CPP_RUNTIME_CLASS_INIT(SceneManager_t68A7070D2AD3860C3EE327C94F38270E49AFB489_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_m258051AAA1489D2D8B252815A45C1E9A2C097201(2, /*hidden argument*/NULL);
+		SceneManager_LoadScene_m258051AAA1489D2D8B252815A45C1E9A2C097201(1, /*hidden argument*/NULL);
 		// }
 		return (bool)0;
 	}
