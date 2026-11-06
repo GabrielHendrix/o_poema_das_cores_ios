@@ -69,6 +69,7 @@
 		<type fullname="opencv_in" preserve="nothing"/>
 		<type fullname="opencv_out" preserve="nothing"/>
 		<type fullname="resize_screen" preserve="nothing"/>
+		<type fullname="splashIntro" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="EnoxSoftware.OpenCVForUnity">
 		<type fullname="OpenCVForUnity.UnityUtils.Helper.WebCamTextureToMatHelper" preserve="nothing"/>
