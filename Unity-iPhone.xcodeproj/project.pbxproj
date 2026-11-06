@@ -90,7 +90,7 @@
 		55A64A719C68674F6FF411B9 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48E44413907D89D96F0664F5 /* UnityAds.framework */; };
 		5623C57617FDCB0800090B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		5623C57717FDCB0800090B9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B5C100E5ED4C100C7819F /* UIKit.framework */; };
-		5623C57D17FDCB0900090B9E = {isa = PBXBuildFile; fileRef = 5623C57B17FDCB0900090B9E /* InfoPlist.strings */; };
+		5623C57D17FDCB0900090B9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5623C57B17FDCB0900090B9E /* InfoPlist.strings */; };
 		5623C57F17FDCB0900090B9E /* Unity_iPhone_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5623C57E17FDCB0900090B9E /* Unity_iPhone_Tests.m */; };
 		56C56C9817D6015200616839 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C56C9717D6015100616839 /* Images.xcassets */; };
 		57D642F6ACD50D1414138E9C /* VuforiaNativeRendererController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA084C9A92B9DA4B5F0D8FD5 /* VuforiaNativeRendererController.mm */; };
@@ -138,6 +138,8 @@
 		96844785A1185EB19C1E0785 /* Il2CppCompilerCalculateTypeValues1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC7549AFB32B9637721D4237 /* Il2CppCompilerCalculateTypeValues1.cpp */; };
 		970645FC968FB21FFDBA2687 /* Generics15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C81347BAA62E98A8B89F089F /* Generics15.cpp */; };
 		9A5B4E12BAD1E1BAA9292D65 /* Generics24.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 785E4B62A987AA074FDEC789 /* Generics24.cpp */; };
+		9A9A8DFD309E508E00C4D377 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63284B9DAF3C0F67188F22ED /* opencv2.framework */; };
+		9A9A8DFE309E508E00C4D377 /* opencv2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 63284B9DAF3C0F67188F22ED /* opencv2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9AFC413AB5D237F81CFA6ECF /* Generics16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 373E468796335BEF19A94BDA /* Generics16.cpp */; };
 		9C314020A4016A32ACC72915 /* UnityAdsPurchasingWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E84D4A90D1F24608B401CB /* UnityAdsPurchasingWrapper.h */; };
 		9CBC4B26A007C9A714516092 /* Il2CppGenericMethodTable.c in Sources */ = {isa = PBXBuildFile; fileRef = 26204DEA840EFFDE8214E160 /* Il2CppGenericMethodTable.c */; };
@@ -323,6 +325,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9A9A8DFE309E508E00C4D377 /* opencv2.framework in Embed Frameworks */,
 				9D25ABA5213FB47800354C27 /* UnityFramework.framework in Embed Frameworks */,
 				AF74450DA63963AE1067EEB4 /* Vuforia.framework in Embed Frameworks */,
 			);
@@ -361,7 +364,7 @@
 		19DB4C94A1AC9F7EDB6E17B5 /* VuforiaUnityPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VuforiaUnityPlayer.h; path = Libraries/com.ptc.vuforia.engine/Vuforia/Plugins/iOS/VuforiaUnityPlayer.h; sourceTree = SOURCE_ROOT; };
 		1A4A407FA2E688F9387FFC7F /* Il2CppCompilerCalculateTypeValues.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Il2CppCompilerCalculateTypeValues.cpp; path = Classes/Native/Il2CppCompilerCalculateTypeValues.cpp; sourceTree = SOURCE_ROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unity-Target-New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* OPoemadasCores.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OPoemadasCores.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D834B609990C08B64A6DAFE /* UnityEngine.InputLegacyModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.InputLegacyModule.cpp; path = Classes/Native/UnityEngine.InputLegacyModule.cpp; sourceTree = SOURCE_ROOT; };
 		218F46AD9B6BA69A593CB730 /* VuforiaRenderDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = VuforiaRenderDelegate.mm; path = Libraries/com.ptc.vuforia.engine/Vuforia/Plugins/iOS/VuforiaRenderDelegate.mm; sourceTree = SOURCE_ROOT; };
 		21AD4927BAA23AE748A70355 /* EnoxSoftware.OpenCVForUnity10.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = EnoxSoftware.OpenCVForUnity10.cpp; path = Classes/Native/EnoxSoftware.OpenCVForUnity10.cpp; sourceTree = SOURCE_ROOT; };
@@ -663,6 +666,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9A8DFD309E508E00C4D377 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,7 +730,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */,
+				1D6058910D05DD3D006BFB54 /* OPoemadasCores.app */,
 				5623C57317FDCB0800090B9E /* Unity-iPhone Tests.xctest */,
 				9D25AB9D213FB47800354C27 /* UnityFramework.framework */,
 			);
@@ -1346,7 +1350,7 @@
 			);
 			name = "Unity-iPhone";
 			productName = "iPhone-target";
-			productReference = 1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* OPoemadasCores.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5623C57217FDCB0800090B9E /* Unity-iPhone Tests */ = {
@@ -1394,6 +1398,7 @@
 			attributes = {
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = VJGR937R6K;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.GameControllers.appletvos = {
@@ -1402,6 +1407,7 @@
 						};
 					};
 					5623C57217FDCB0800090B9E = {
+						DevelopmentTeam = VJGR937R6K;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1D6058900D05DD3D006BFB54;
 					};
@@ -1451,7 +1457,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5623C57D17FDCB0900090B9E,
+				5623C57D17FDCB0900090B9E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1770,11 +1776,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = VJGR937R6K;
 				ENABLE_ON_DEMAND_RESOURCES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/OpenCVForUnity/Plugins/iOS",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_USE_INDIRECT_FUNCTION_CALLS = NO;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1815,8 +1826,13 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = VJGR937R6K;
 				ENABLE_ON_DEMAND_RESOURCES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/OpenCVForUnity/Plugins/iOS",
+				);
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1994,8 +2010,13 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = VJGR937R6K;
 				ENABLE_ON_DEMAND_RESOURCES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/OpenCVForUnity/Plugins/iOS",
+				);
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -2111,8 +2132,13 @@
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = VJGR937R6K;
 				ENABLE_ON_DEMAND_RESOURCES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks/OpenCVForUnity/Plugins/iOS",
+				);
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
