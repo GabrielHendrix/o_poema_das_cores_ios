@@ -36263,7 +36263,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SessionRecorderInfoPopup_ShowPopup_m2DD1
 		Text_tE9317B57477F4B50AA4C16F460DE6F82DAD6D030 * L_1 = __this->get_mInfoText_5();
 		String_t* L_2 = ___message0;
 		NullCheck(L_1);
-		VirtActionInvoker1< String_t* >::Invoke(73 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_2);
+		VirtActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_2);
 		float L_3 = ___duration1;
 		RuntimeObject* L_4 = SessionRecorderInfoPopup_ShowPopup_m62AC736F9F33BF737C69FBEAAA0804431FC08AB9(__this, L_3, /*hidden argument*/NULL);
 		MonoBehaviour_StartCoroutine_mBF8044CE06A35D76A69669ADD8977D05956616B7(__this, L_4, /*hidden argument*/NULL);

@@ -60,25 +60,25 @@ jobs:
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp "$PP_PATH" ~/Library/MobileDevice/Provisioning\ Profiles/
           
-      - name: Archive Project
+      - name: Build Archive
         run: |
-          # 1. Garante a criação da pasta build antes do archive
           mkdir -p build
-
-          # 2. Executa o archive com caminho absoluto
           xcodebuild archive \
             -project Unity-iPhone.xcodeproj \
             -scheme Unity-iPhone \
             -sdk iphoneos \
             -configuration Release \
             -archivePath "$GITHUB_WORKSPACE/build/Unity-iPhone.xcarchive" \
+            OTHER_LDFLAGS='$(inherited) -Wl,-ld_classic' \
+            DEAD_CODE_STRIPPING=NO \
+            GCC_STRICT_ALIASING=NO \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             PROVISIONING_PROFILE_SPECIFIER=""
 
-          # 3. Confirma que o arquivo foi realmente criado
-          ls -ld "$GITHUB_WORKSPACE/build/Unity-iPhone.xcarchive"
+      - name: Verify Archive
+        run: ls -ld "$GITHUB_WORKSPACE/build/Unity-iPhone.xcarchive"
 
       - name: Export IPA
         run: |

@@ -59,10 +59,11 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngineCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_UICodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Vuforia_UnityExtensionsCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_EnoxSoftware_OpenCVForUnityCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_VuforiaScriptsCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_com_unity_multiplayerU2Dhlapi_RuntimeCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 extern const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[27] = 
+const Il2CppCodeGenModule* g_CodeGenModules[28] = 
 {
 	(&g_mscorlibCodeGenModule),
 	(&g_System_ConfigurationCodeGenModule),
@@ -89,6 +90,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[27] =
 	(&g_UnityEngine_UICodeGenModule),
 	(&g_Vuforia_UnityExtensionsCodeGenModule),
 	(&g_EnoxSoftware_OpenCVForUnityCodeGenModule),
+	(&g_VuforiaScriptsCodeGenModule),
 	(&g_com_unity_multiplayerU2Dhlapi_RuntimeCodeGenModule),
 	(&g_AssemblyU2DCSharpCodeGenModule),
 };
@@ -97,19 +99,19 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	10,
 	g_ReversePInvokeWrapperPointers,
-	15639,
+	15646,
 	g_Il2CppGenericMethodPointers,
-	5291,
+	5294,
 	g_Il2CppInvokerPointers,
-	5779,
+	5821,
 	g_AttributeGenerators,
 	721,
 	g_UnresolvedVirtualMethodPointers,
-	279,
+	280,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	27,
+	28,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;
