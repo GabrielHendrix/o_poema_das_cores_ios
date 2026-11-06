@@ -52,6 +52,7 @@
 		<type fullname="UnityEngine.FlareLayer" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="StaticCamManager" preserve="nothing"/>
 		<type fullname="book_load" preserve="nothing"/>
 		<type fullname="book_player" preserve="nothing"/>
 		<type fullname="cam_load" preserve="nothing"/>
