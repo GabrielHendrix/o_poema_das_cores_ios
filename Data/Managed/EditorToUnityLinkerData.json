@@ -2897,6 +2897,9 @@
     "forceIncludeModules": [],
     "forceExcludeModules": [
         "ClusterInput",
-        "ClusterRenderer"
+        "ClusterRenderer",
+        "Subsystems",
+        "VR",
+        "XR"
     ]
 }
