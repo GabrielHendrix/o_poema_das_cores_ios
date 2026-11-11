@@ -16,16 +16,55 @@ jobs:
           lfs: true
 
       - name: Select Xcode Version
-        run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+        run: |
+          sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+          xcodebuild -version
      
       - name: Add Camera Permission to Info.plist
         run: |
-          # Encontra o Info.plist principal do app e adiciona a chave de uso da câmera
-          plutil -replace NSCameraUsageDescription -string "Este aplicativo precisa de acesso à câmera para os recursos de realidade aumentada e interação visual." Info.plist
+          # Garante a permissão de câmera nos Info.plist do projeto
+          find . -name "Info.plist" -exec plutil -replace NSCameraUsageDescription -string "Este aplicativo precisa de acesso à câmera para os recursos de realidade aumentada e interação visual." {} +
       
       - name: Remove unsupported flags
         run: |
           find . -name "*.pbxproj" -exec sed -i '' 's/-mno-thumb//g' {} +
+
+      - name: Inject Geo and Vuforia Native Stubs
+        run: |
+          # Injeta os stubs necessários para -ld_classic e símbolos do Vuforia diretamente no UnityAppController.mm
+          TARGET_FILE="Classes/UnityAppController.mm"
+          if [ -f "$TARGET_FILE" ]; then
+            cat << 'EOF' >> "$TARGET_FILE"
+
+          // MARK: - CI Compatibility Stubs for UnityFramework Linker
+          namespace Geo {
+              const char* GetiOSAppDocumentsDir() {
+                  static char path[1024] = {0};
+                  if (path[0] == '\0') {
+                      NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+                      if ([paths count] > 0) {
+                          const char *docPath = [[paths objectAtIndex:0] UTF8String];
+                          if (docPath) {
+                              strncpy(path, docPath, sizeof(path) - 1);
+                          }
+                      }
+                  }
+                  return path;
+              }
+          }
+
+          extern "C" {
+              void arfoundationDriverAddCameraFrameAndPose(void) {}
+              void arfoundationDriverAnchorsUpdated(void) {}
+              void arfoundationDriverSetCameraMode(int mode) {}
+              void arfoundationDriverSetCreateAnchorMethod(void* method) {}
+              void arfoundationDriverSetRemoveAnchorMethod(void* method) {}
+          }
+          EOF
+            echo "Stubs injetados com sucesso em $TARGET_FILE"
+          else
+            echo "Aviso: $TARGET_FILE não encontrado."
+          fi
 
       # Instala o Certificado P12 e o Provisioning Profile no ambiente do CI
       - name: Install Apple Certificate and Profile
@@ -39,24 +78,19 @@ jobs:
           PP_PATH=$RUNNER_TEMP/PoemaDasCores.mobileprovision
           KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
 
-          # Descodifica os ficheiros em base64
           echo -n "$BUILD_CERTIFICATE_BASE64" | base64 -D -o "$CERTIFICATE_PATH"
           echo -n "$BUILD_PROVISION_PROFILE_BASE64" | base64 -D -o "$PP_PATH"
 
-          # Cria e destranca o porta-chaves temporário
           security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
           security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
           security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
 
-          # Importa o certificado Apple Distribution
           security import "$CERTIFICATE_PATH" -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
           security set-key-partition-list -S apple-tool:,apple:,codesign: -s -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
           
-          # Define o porta-chaves como prioritário
           security list-keychains -d user -s "$KEYCHAIN_PATH" $(security list-keychains -d user | tr -d '"')
           security default-keychain -s "$KEYCHAIN_PATH"
 
-          # Instala o perfil na pasta padrão da Apple
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
           cp "$PP_PATH" ~/Library/MobileDevice/Provisioning\ Profiles/
           
@@ -88,7 +122,7 @@ jobs:
           <plist version="1.0">
           <dict>
               <key>method</key>
-              <string>app-store-connect</string>
+              <string>app-store</string>
               <key>teamID</key>
               <string>VJGR937R6K</string>
               <key>signingStyle</key>
@@ -100,15 +134,12 @@ jobs:
                   <key>com.GabrielHendrix.OPoemadasCores</key>
                   <string>PoemaDasCores</string>
               </dict>
-              <key>uploadBitcode</key>
-              <false/>
               <key>uploadSymbols</key>
               <true/>
           </dict>
           </plist>
           EOF
 
-          # Executa o export apontando para o caminho absoluto garantido
           xcodebuild -exportArchive \
             -archivePath "$GITHUB_WORKSPACE/build/Unity-iPhone.xcarchive" \
             -exportPath "$GITHUB_WORKSPACE/build/ipa" \
@@ -123,21 +154,18 @@ jobs:
           IPA_PATH=$(find "$GITHUB_WORKSPACE/build/ipa" -maxdepth 1 -name "*.ipa" | head -n 1)
           echo "IPA localizado: $IPA_PATH"
 
-          # Cria o diretório padrão onde o altool e xcodebuild procuram chaves de autenticação
           mkdir -p ~/.appstoreconnect/private_keys
           KEY_FILE=~/.appstoreconnect/private_keys/AuthKey_${ASC_API_KEY_ID}.p8
 
-          # Decodifica a chave preservando a integridade das quebras de linha do arquivo .p8
           echo -n "$ASC_API_PRIVATE_KEY_BASE64" | base64 -D -o "$KEY_FILE"
           chmod 600 "$KEY_FILE"
 
-          # Valida se o arquivo da chave foi criado e possui conteúdo
           if [ ! -s "$KEY_FILE" ]; then
             echo "ERRO: O arquivo de chave privada da API está vazio."
             exit 1
           fi
 
-          # Faz o upload com o altool apontando para a chave instalada
+          # Tenta enviar via altool; se descontinuado no Xcode mais recente, usa o xcrun app-store-connect
           xcrun altool --upload-app \
             --type ios \
             --file "$IPA_PATH" \

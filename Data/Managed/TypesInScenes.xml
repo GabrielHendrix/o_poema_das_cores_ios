@@ -98,7 +98,4 @@
 		<type fullname="DefaultInitializationErrorHandler" preserve="nothing"/>
 		<type fullname="DefaultTrackableEventHandler" preserve="nothing"/>
 	</assembly>
-	<assembly fullname="com.unity.multiplayer-hlapi.Runtime">
-		<type fullname="UnityEngine.Networking.NetworkCallbacks" preserve="nothing"/>
-	</assembly>
 </linker>
