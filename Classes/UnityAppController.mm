@@ -637,3 +637,20 @@ static void AddNewAPIImplIfNeeded()
         class_replaceMethod([UIView class], @selector(safeAreaInsets), UIView_SafeAreaInsets_IMP, UIView_safeAreaInsets_Enc);
     }
 }
+
+// MARK: - Geo Documents Directory Stub
+namespace Geo {
+    const char* GetiOSAppDocumentsDir() {
+        static char path[1024] = {0};
+        if (path[0] == '\0') {
+            NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+            if ([paths count] > 0) {
+                const char *docPath = [[paths objectAtIndex:0] UTF8String];
+                if (docPath) {
+                    strncpy(path, docPath, sizeof(path) - 1);
+                }
+            }
+        }
+        return path;
+    }
+}
